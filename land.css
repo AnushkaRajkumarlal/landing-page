@@ -1,0 +1,162 @@
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+    scroll-behavior: smooth;
+}
+body{
+    min-height: 100vh;
+    overflow-x:hidden;
+    background:linear-gradient(#2e0646,#1e0136);
+}
+header{
+    position:absolute;
+    top:0;
+    left:0;
+    width:0;
+    padding:30px 100px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index:10000;
+}
+header .logo img {
+    width: 50px; 
+    height: 50px; 
+    transition: transform 0.5s ease; 
+    border-radius:20px;
+}
+
+header .logo:hover img {
+    transform: scale(1.5);
+}
+
+header ul{
+    font-size: 28px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:0.75rem;
+    margin-left:800px;
+}
+header ul li{
+    list-style:none;
+ 
+}
+header ul li a{
+    text-decoration: none;
+    padding:6px 15px;
+    color:#ffffff;
+    size:100px;
+    border-radius:20px;
+   
+}
+header ul li a:hover,
+header ul li a:active
+{
+    background: #fff;
+    color:#2e0646;
+}
+section{
+    position: relative;
+    width:100%;
+    height:100vh;
+    padding:100px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+section::before{
+    content:'';
+    position:absolute;
+    bottom:0;
+    width:100%;
+    height:100px;
+    background:linear-gradient(to top,#130122,transparent);
+    z-index:1000;
+}
+section img{
+    position:absolute;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    pointer-events: none;
+}
+section img#moon{
+    mix-blend-mode: screen;
+}
+section img#mountains_front{
+    z-index:10;
+}
+
+#text{
+    position:absolute;
+    color:#ffffff;
+    white-space:nowrap;
+    font-size:7.5vw;
+    z-index:9;
+}
+#btn
+{
+    text-decoration: none;
+    padding:10px 30px;
+    border-radius:40px;
+    background:#fff;
+    font-size:1.5rem;
+    color:#2e0646;
+    z-index:9;
+    transform:translateY(100px)
+}
+.sec{
+    position:relative;
+    padding: 100px;
+}
+.sec h2{
+    font-size:3.5rem;
+    margin-bottom:10px;
+    color:#020224;
+}
+.sec p{
+    font-size:1.5rem;
+    color:#073014f1;
+    font-weight: 500%;
+}
+#sec{
+    position:absolute;
+    background-image: url("land.png");
+    background-size: cover;
+    width:100%;
+    height:100%;
+}
+.stars{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-image: url("stars.png");
+    z-index:8;
+}
+.box{
+    height: 400px;
+    width: 350px;
+    background-color: transparent;
+    margin-top: 15px;
+}
+.box-img{
+    background-size: cover;
+    height: 300px;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    border-image: round;
+}
+.box-content p{
+    color: #ffffff;
+}
+.footer-container{
+    font-size: 0.5rem;
+    background:linear-gradient(to top,#130122,transparent);
+    padding-top: 4px;
+}

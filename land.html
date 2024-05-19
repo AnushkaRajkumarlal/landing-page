@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+    <head> 
+    <meta charset="utf-8">
+    <meta name="viewport" content="device=device-width" initial-scale="1.0">
+    <link rel="stylesheet" href="land.css">
+    <title>landing page</title>
+    </head>
+    <body>
+        <header>
+            <header>
+                <a href="#" class="logo"><img src="starlight.png" alt="logo"></a>
+            </header>
+            <ul>
+                <li><a href="#" class="active">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Work</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </header>
+        <section>
+            <img src="stars.png" id="stars">
+            <img src="moon.png" id="moon">
+            <img src="mountains_behind.png" id="mountains_behind">
+            <h2 id="text">StarLight</h2>
+            <a href="#sec" id="btn">Explore</a>
+            <img src="mountains_front.png" id="mountains_front">
+        </section>
+        <div class="sec" id="sec">
+            <h2>EXPLORE MORE ABOUT STARS</h2>
+            <p>Stars are the radiant celestial bodies that dot the vast expanse of space, captivating humanity with their shimmering brilliance and mysterious allure. Formed from vast clouds of gas and dust, stars are the fundamental building blocks of galaxies, including our own Milky Way.
+
+                These luminous spheres of plasma undergo a remarkable lifecycle, beginning as dense nebulae and eventually evolving into various stages such as main sequence stars, red giants, and white dwarfs. Some stars culminate in spectacular explosions known as supernovae, scattering their elemental remnants across the cosmos and seeding new generations of stars.
+                
+                Stars play a pivotal role in shaping the cosmos, influencing the formation of planetary systems and fostering the conditions necessary for life to thrive. They serve as cosmic beacons, guiding astronomers in their exploration of the universe and illuminating the wonders of deep space.
+                
+                From the dazzling radiance of our nearest star, the Sun, to the distant pinpricks of light in the night sky, stars continue to inspire awe and wonder, reminding us of the boundless beauty and mystery of the cosmos.
+                <br><br></p>
+                <div class="stars">
+                    <div class="box1 box">
+                        <div class="box-content">
+                            <p>Yellow drawf star </p>
+                            <div class="box-img" style="background-image: url('yellowdrawf.png');"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="box2 box">
+                        <div class="box-content">
+                            <p>Red drawf star</p>
+                            <div class="box-img" style="background-image: url('red\ drawf.png');"></div>
+                           
+                        </div>
+                    </div>    
+                   
+                    <div class="box4 box">
+                        <div class="box-content">
+                            <p>Red Supergaint star</p>
+                            <div class="box-img" style="background-image: url('redsupergaint.png');"></div>
+                            
+                        </div>
+                    </div>
+                    <div class="box1 box">
+                        <div class="box-content">
+                            <p>Blue gaint star</p>
+                            <div class="box-img" style="background-image: url('bluegaint.png');"></div>
+                           
+                        </div>
+                    </div>
+                    <div class="box2 box">
+                        <div class="box-content">
+                            <p>White drawf star</p>
+                            <div class="box-img" style="background-image: url('whitedrawf.png');"></div>
+                            
+                        </div>
+                    </div>    
+                    <div class="box3 box">
+                        <div class="box-content">
+                            <p>Brown drawf star </p>
+                            <div class="box-img" style="background-image: url('brown.png');"></div>
+                            
+                        </div>
+                    </div>
+                   
+                </div>
+            
+            
+                <div class="footer-container">
+                    <h2>Copyright &copy; 2024 by Anushka Raj kumar lal | All Rights Reserved. </h2>
+                </div>
+            </footer>
+            </div>
+           
+        <script>
+            let stars = document.getElementById('stars');
+            let moon = document.getElementById('moon');
+            let mountains_behind = document.getElementById('mountains_behind');
+            let text = document.getElementById('text');
+            let btn = document.getElementById('btn');
+            let mountains_front = document.getElementById('mountains_front');
+            let header = document.querySelector('header');
+
+            window.addEventListener('scroll', function() {
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mountains_behind.style.top = value * 0.5 + 'px';
+           mountains_front.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.top = value * 0.5 + 'px';
+        });
+        </script>
+      
+     </body>
+</html>                                                                                                  
